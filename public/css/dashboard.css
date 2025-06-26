@@ -1,0 +1,296 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan pada body */
+  /* overflow-y: hidden; Mencegah scroll di body, karena akan dihandle oleh .content-section */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-grow-1.d-flex.flex-column,
+.main-content-wrapper {
+  flex: 1 1 auto;
+  min-height: 0;
+  /* Hapus max-height agar konten tidak terpotong dan tidak ada celah */
+}
+
+.main-content-wrapper {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0 !important;
+  background: #fff;
+}
+
+.content-section {
+  flex: 1 1 0;
+  min-height: 0;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* #main-wrapper { Tidak lagi diperlukan jika struktur HTML utama adalah <div class="d-flex vh-100"> } */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background: #343a40;
+    color: #fff;
+    transition: width 0.3s, min-width 0.3s, left 0.3s;
+    position: fixed; /* Ubah dari sticky ke fixed agar selalu menempel di viewport */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    align-self: flex-start;
+    overflow-y: auto;
+    z-index: 1020; /* z-index untuk sidebar */
+}
+.sidebar.collapsed { /* Lebar sidebar saat diciutkan */
+    width: 80px;
+    min-width: 80px;
+}
+.sidebar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    background: #23272b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sidebar .logo-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    transition: margin 0.3s;
+}
+.sidebar.collapsed .logo-text {
+    display: none;
+}
+.sidebar.collapsed .logo-icon {
+    margin-right: 0;
+}
+.sidebar .logo-text {
+    transition: opacity 0.3s;
+}
+.sidebar .nav-link {
+    color: #adb5bd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.3rem 0.6rem; /* Set consistent padding here for all states */
+    transition: all 0.2s ease-in-out; /* Add transition for smooth hover effects */
+}
+.sidebar .nav-link i {
+    font-size: 1.2rem;
+}
+.sidebar .nav-link span {
+    transition: opacity 0.3s;
+}
+.sidebar.collapsed .nav-link span {
+    /* Default hide text when sidebar is programmatically collapsed */
+    @media (min-width: 992px) { /* Apply this only for desktop view when collapsed */
+        display: none;
+    }
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  color: #fff !important;
+  background-color: #0d6efd !important;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+.content {
+    flex: 1;
+    padding: 0;
+    transition: margin-left 0.3s;
+    margin-left: 0;
+}
+.content.collapsed {
+    margin-left: 0;
+}
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    top: 0; /* Ubah dari 56px ke 0 */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    z-index: 1039; /* Di bawah sidebar mobile, di atas konten */
+}
+.sidebar.show + .sidebar-backdrop,
+.sidebar-backdrop.show {
+    display: block;
+}
+.navbar {
+    position: sticky; /* Membuat navbar menempel di atas .main-content-wrapper */
+    top: 0;
+    background-color: #fff; /* Pastikan navbar punya background agar konten tidak terlihat di belakangnya */
+    z-index: 1025; 
+    width: 100%;
+}
+body {
+    /* max-height: 100vh; Dihapus dari sini, sudah di inline style main_layout.php */
+    min-width: 0;
+}
+
+/* Aturan untuk main-content-wrapper ketika sidebar TIDAK collapsed */
+/* Ini adalah .main-content-wrapper di HTML Anda */
+.main-content-wrapper { /* Target class spesifik jika ada, atau .flex-grow-1.d-flex.flex-column */
+    transition: margin-left 0.3s;
+    padding-bottom: 0 !important; /* Hapus padding-bottom di .main-content-wrapper agar tidak ada celah bawah */
+}
+
+/* --- DESKTOP STYLES (min-width: 992px) --- */
+@media (min-width: 992px) {
+    .flex-grow-1.d-flex.flex-column, .main-content-wrapper {
+        margin-left: 0 !important; /* Hapus margin-left agar konten menempel ke sidebar */
+    }
+    .sidebar.collapsed ~ .flex-grow-1.d-flex.flex-column, .sidebar.collapsed ~ .main-content-wrapper {
+        margin-left: 0 !important; /* Tidak perlu margin-left, flexbox sudah mengatur posisi */
+    }
+    .sidebar .nav-link span {
+        display: inline; 
+    }
+    .sidebar.collapsed .nav-link span {
+        display: none;
+    }
+    .main-content-wrapper {
+        padding-left: 250px; /* Agar konten tidak tertutup sidebar */
+    }
+    footer {
+        left: 250px;
+        width: calc(100% - 250px);
+    }
+    .navbar {
+        left: 250px;
+        width: calc(100% - 250px);
+        position: fixed;
+        top: 0;
+        z-index: 1025;
+    }
+    .sidebar.collapsed ~ .main-content-wrapper {
+        padding-left: 80px !important;
+    }
+    .sidebar.collapsed ~ .main-content-wrapper .navbar {
+        left: 80px !important;
+        width: calc(100% - 80px) !important;
+    }
+    .sidebar.collapsed ~ footer {
+        left: 80px !important;
+        width: calc(100% - 80px) !important;
+    }
+}
+
+/* --- MOBILE & TABLET STYLES (max-width: 991.98px) --- */
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: fixed;
+        left: -250px; /* Default tersembunyi */
+        top: 0;
+        width: 250px;
+        min-width: 250px; /* Pastikan lebar tetap saat muncul */
+        height: 100vh;
+        z-index: 1040; /* Di atas segalanya saat .show */
+        box-shadow: 2px 0 8px rgba(0,0,0,0.07);
+    }
+    .sidebar.show {
+        left: 0;
+    }
+    .sidebar.collapsed { /* Di mobile, .collapsed juga berarti tersembunyi */
+        left: -250px;
+    }
+    .sidebar.collapsed .nav-link span {
+        display: inline !important; /* Teks selalu terlihat jika sidebar .show */
+    } 
+    .flex-grow-1.d-flex.flex-column { /* .main-content-wrapper */
+        margin-left: 0 !important;
+    }
+    /* .navbar {
+        /* Atur navbar untuk mobile jika perlu, misal z-index agar di bawah sidebar.show */
+    } */
+    .content {
+        margin-left: 0 !important;
+        padding: 1rem;
+    }
+
+
+@media (max-width: 575.98px) {
+    .content {
+        padding: 0.5rem;
+    }
+    .sidebar .logo {
+        font-size: 1.1rem;
+        padding: 0.7rem;
+    }
+}
+
+img.small-avatar,
+.avatar-small,
+.navbar .avatar-small {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sidebar.collapsed .logo-icon {
+  margin-right: 0;
+}
+
+.sidebar .logo-text {
+  transition: opacity 0.3s;
+}
+
+.sidebar .nav-link {
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .nav-link i {
+  font-size: 1.2rem;
+}
+
+.sidebar .nav-link span {
+  transition: opacity 0.3s;
+}
+
+
+.content.collapsed {
+  margin-left: 0;
+}
+
+.content, .content-section, .main-content-wrapper {
+  padding-bottom: 0 !important;
+}
+
+footer {
+  background: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Menempel ke sidebar desktop */
+  width: calc(100% - 250px); /* Lebar dikurangi sidebar */
+  z-index: 1025;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+  transition: left 0.3s, width 0.3s;
+}
+
+@media (max-width: 991.98px) {
+  footer {
+    left: 0;
+    width: 100%;
+  }
+}

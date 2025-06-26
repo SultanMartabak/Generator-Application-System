@@ -1,0 +1,84 @@
+<?php use App\Filters\Rbac; ?>
+
+<!-- Table view for medium screens and up -->
+<div class="table-responsive rounded-4 shadow-sm border-0 d-none d-md-block">
+    <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+            <tr>
+                <th class="text-center">#</th>
+                <th>Nama</th>
+                <!-- Add more table headers based on your model's allowed fields -->
+                <th class="text-center">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (!empty(${{modelVarName}}s)):
+                foreach (${{modelVarName}}s as $key => ${{modelVarName}}): ?>
+                    <tr class="bg-white border-bottom">
+                        <td class="text-center fw-bold text-secondary-emphasis"><?= (($pager->getCurrentPage() - 1) * $pager->getPerPage()) + $key + 1 ?></td>
+                        <td><?= esc(${{modelVarName}}['name'] ?? 'N/A') ?></td>
+                        <!-- Add more table cells -->
+                        <td class="text-center">
+                            <div class="dropdown">
+                                <button class="btn btn-gradient btn-sm dropdown-toggle px-3 py-2 fw-semibold rounded-pill shadow-sm border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: linear-gradient(90deg,#0d6efd 0,#6610f2 100%); color: #fff;">
+                                    <i class="bi bi-gear"></i> Aksi
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn animate__faster rounded-3 shadow">
+                                    <?php if (Rbac::userCan('can_update', '{{urlPath}}')):
+                                        echo "<li><a class='dropdown-item d-flex align-items-center gap-2' href='#' onclick='openEditModal(" . json_encode(${{modelVarName}}) . ")'><i class='bi bi-pencil-square'></i> Edit</a></li>";
+                                    endif; ?>
+                                    <?php if (Rbac::userCan('can_delete', '{{urlPath}}')):
+                                        echo "<li><a class='dropdown-item d-flex align-items-center gap-2 text-danger' href='#' onclick='openDeleteModal(" . esc(${{modelVarName}}["id"]) . ", \"" . esc(${{modelVarName}}["name"]) . "\")'><i class='bi bi-trash'></i> Hapus</a></li>";
+                                    endif; ?>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach;
+            else: ?>
+                <tr>
+                    <td colspan="3" class="text-center text-muted py-5">Tidak ada data {{menuName}} ditemukan.</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+
+<!-- Card view for small screens -->
+<div class="d-block d-md-none">
+    <?php if (!empty(${{modelVarName}}s)):
+        foreach (${{modelVarName}}s as $key => ${{modelVarName}}): ?>
+            <div class="card shadow-sm mb-3 rounded-4 border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h5 class="card-title mb-1"><?= esc(${{modelVarName}}['name'] ?? 'N/A') ?></h5>
+                            <p class="card-text text-muted mb-2">#<?= (($pager->getCurrentPage() - 1) * $pager->getPerPage()) + $key + 1 ?></p>
+                            <!-- Add more fields here -->
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn animate__faster rounded-3 shadow">
+                                <?php if (Rbac::userCan('can_update', '{{urlPath}}')):
+                                    echo "<li><a class='dropdown-item d-flex align-items-center gap-2' href='#' onclick='openEditModal(" . json_encode(${{modelVarName}}) . ")'><i class='bi bi-pencil-square'></i> Edit</a></li>";
+                                endif; ?>
+                                <?php if (Rbac::userCan('can_delete', '{{urlPath}}')):
+                                    echo "<li><a class='dropdown-item d-flex align-items-center gap-2 text-danger' href='#' onclick='openDeleteModal(" . esc(${{modelVarName}}["id"]) . ", \"" . esc(${{modelVarName}}["name"]) . "\")'><i class='bi bi-trash'></i> Hapus</a></li>";
+                                endif; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach;
+    else: ?>
+        <div class="text-center text-muted py-5">Tidak ada data {{menuName}} ditemukan.</div>
+    <?php endif; ?>
+</div>
+
+<!-- Modern Pagination (for both desktop and mobile) -->
+<div class="d-flex justify-content-center my-4">
+    <?= $pager->links('default', 'modern_pagination') ?>
+</div>

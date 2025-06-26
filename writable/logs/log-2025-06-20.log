@@ -1,0 +1,921 @@
+DEBUG - 2025-06-20 02:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 02:24:49 --> CSRF token verified.
+DEBUG - 2025-06-20 02:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 02:24:52 --> TypeError: CodeIgniter\Config\Services::router(): Argument #1 ($routes) must be of type ?CodeIgniter\Router\RouteCollectionInterface, true given, called in C:\laragon\www\GAS\system\Config\BaseService.php on line 312
+[Method: GET, Route: setting/menu]
+in SYSTEMPATH\Config\Services.php on line 631.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::router(true)
+ 2 APPPATH\Filters\Rbac.php(49): CodeIgniter\Config\BaseService::__callStatic('router', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 02:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 02:29:45 --> TypeError: CodeIgniter\Config\Services::router(): Argument #1 ($routes) must be of type ?CodeIgniter\Router\RouteCollectionInterface, true given, called in C:\laragon\www\GAS\system\Config\BaseService.php on line 312
+[Method: GET, Route: setting/menu]
+in SYSTEMPATH\Config\Services.php on line 631.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::router(true)
+ 2 APPPATH\Filters\Rbac.php(49): CodeIgniter\Config\BaseService::__callStatic('router', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 02:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 02:29:47 --> TypeError: CodeIgniter\Config\Services::router(): Argument #1 ($routes) must be of type ?CodeIgniter\Router\RouteCollectionInterface, true given, called in C:\laragon\www\GAS\system\Config\BaseService.php on line 312
+[Method: GET, Route: setting/menu]
+in SYSTEMPATH\Config\Services.php on line 631.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::router(true)
+ 2 APPPATH\Filters\Rbac.php(49): CodeIgniter\Config\BaseService::__callStatic('router', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 02:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 02:29:50 --> TypeError: CodeIgniter\Config\Services::router(): Argument #1 ($routes) must be of type ?CodeIgniter\Router\RouteCollectionInterface, true given, called in C:\laragon\www\GAS\system\Config\BaseService.php on line 312
+[Method: GET, Route: setting/menu]
+in SYSTEMPATH\Config\Services.php on line 631.
+ 1 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::router(true)
+ 2 APPPATH\Filters\Rbac.php(49): CodeIgniter\Config\BaseService::__callStatic('router', [...])
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 02:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:30:17 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:30:19 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:30:21 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:30:23 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:30:52 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:32:47 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:32:49 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:32:51 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:34:03 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:34:05 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:35:01 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:35:04 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:35:33 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:35:36 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 02:36:06 --> CSRF token verified.
+DEBUG - 2025-06-20 02:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:38:20 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:38:24 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:41:23 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:43:23 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 02:52:02 --> CSRF token verified.
+DEBUG - 2025-06-20 02:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:52:05 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 02:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 02:52:07 --> RBAC Filter Exception for UserID: 1, Path: /setting/roles: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/roles', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 02:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 09:55:40 --> RBAC Filter Exception for UserID: 1, Path: /setting/menu: Call to undefined method CodeIgniter\Router\Router::getMatchedRouteKey()
+#0 C:\laragon\www\GAS\system\Filters\Filters.php(241): App\Filters\Rbac->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\laragon\www\GAS\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#2 C:\laragon\www\GAS\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('setting/menu', 'before')
+#3 C:\laragon\www\GAS\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\GAS\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#5 C:\laragon\www\GAS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\laragon\www\GAS\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 {main}
+DEBUG - 2025-06-20 09:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 09:57:34 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/menu. Tried lookup with: /setting/menu.
+DEBUG - 2025-06-20 09:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 09:59:46 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/menu. Tried lookup with: /setting/menu.
+DEBUG - 2025-06-20 09:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 09:59:48 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/roles. Tried lookup with: /setting/roles.
+DEBUG - 2025-06-20 09:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:01:59 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 10:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:02:21 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 10:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 10:14:35 --> ErrorException: Undefined array key "nama_lengkap"
+[Method: GET, Route: setting/roles]
+in APPPATH\Views\setting\roles.php on line 76.
+ 1 APPPATH\Views\setting\roles.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('setting/roles', [], true)
+ 5 APPPATH\Controllers\Setting.php(55): view('setting/roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Setting->roles()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 10:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 10:15:42 --> ErrorException: Undefined array key "nama_lengkap"
+[Method: GET, Route: setting/roles]
+in APPPATH\Views\setting\roles.php on line 76.
+ 1 APPPATH\Views\setting\roles.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('setting/roles', [], true)
+ 5 APPPATH\Controllers\Setting.php(55): view('setting/roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Setting->roles()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 10:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 10:16:09 --> ErrorException: Undefined array key "nama_lengkap"
+[Method: GET, Route: setting/roles]
+in APPPATH\Views\setting\roles.php on line 76.
+ 1 APPPATH\Views\setting\roles.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\GAS\\app\\Views\\setting\\roles.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('setting/roles', [], true)
+ 5 APPPATH\Controllers\Setting.php(55): view('setting/roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Setting->roles()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 10:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:16:45 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getuserroles/1. Tried lookup with: /setting/getuserroles/1.
+DEBUG - 2025-06-20 10:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:17:00 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:17:31 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:19:41 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:19:58 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getuserroles/1. Tried lookup with: /setting/getuserroles/1.
+DEBUG - 2025-06-20 10:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:20:16 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getuserroles/1. Tried lookup with: /setting/getuserroles/1.
+DEBUG - 2025-06-20 10:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 10:20:19 --> CSRF token verified.
+DEBUG - 2025-06-20 10:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:20:19 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/saveuserrole. Tried lookup with: /setting/saveuserrole.
+DEBUG - 2025-06-20 10:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:22:07 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:22:14 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:22:26 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/2. Tried lookup with: /setting/getrolemenus/2.
+DEBUG - 2025-06-20 10:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:23:34 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 10:33:57 --> CSRF token verified.
+DEBUG - 2025-06-20 10:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 10:59:05 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 10:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 10:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:19:27 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/getrolemenus/1. Tried lookup with: /setting/getrolemenus/1.
+DEBUG - 2025-06-20 11:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 11:19:35 --> CSRF token verified.
+DEBUG - 2025-06-20 11:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:19:35 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/saverolemenu. Tried lookup with: /setting/saverolemenu.
+DEBUG - 2025-06-20 11:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 11:20:27 --> CSRF token verified.
+DEBUG - 2025-06-20 11:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:20:27 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/saverole. Tried lookup with: /setting/saverole.
+DEBUG - 2025-06-20 11:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 11:28:51 --> CSRF token verified.
+DEBUG - 2025-06-20 11:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:28:51 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/savemenu. Tried lookup with: /setting/savemenu.
+DEBUG - 2025-06-20 11:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-20 11:29:36 --> RBAC: Access denied for UserID: 1 to menu '/setting/users' (MenuID: 12). Roles: 1. Path: /setting/users
+DEBUG - 2025-06-20 11:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-20 11:29:39 --> RBAC: Access denied for UserID: 1 to menu '/setting/users' (MenuID: 12). Roles: 1. Path: /setting/users
+DEBUG - 2025-06-20 11:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:30:28 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/getuserroles/1. Tried lookup with: /setting/users/getuserroles/1.
+DEBUG - 2025-06-20 11:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:33:17 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/getuserroles/1. Tried lookup with: /setting/users/getuserroles/1.
+DEBUG - 2025-06-20 11:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:34:07 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/getuserroles/1. Tried lookup with: /setting/users/getuserroles/1.
+DEBUG - 2025-06-20 11:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:34:50 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/getuserroles/1. Tried lookup with: /setting/users/getuserroles/1.
+DEBUG - 2025-06-20 11:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:38:58 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/getuserroles/1. Tried lookup with: /setting/users/getuserroles/1.
+DEBUG - 2025-06-20 11:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 11:40:15 --> CSRF token verified.
+DEBUG - 2025-06-20 11:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-20 11:40:15 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/users/save. Tried lookup with: /setting/users/save.
+DEBUG - 2025-06-20 11:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:47 --> RBAC: Exact path not found for '/setting/deleterole/3', trying parent path: /setting/deleterole. Lookup method: currentPath (/setting/deleterole/3) -> parentPath (/setting/deleterole)
+ERROR - 2025-06-20 11:52:47 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 11:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:52:59 --> RBAC: Exact path not found for '/setting/deleterole/3', trying parent path: /setting/deleterole. Lookup method: currentPath (/setting/deleterole/3) -> parentPath (/setting/deleterole)
+ERROR - 2025-06-20 11:52:59 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 11:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:04 --> RBAC: Exact path '/setting/deleterole/3' not found. Trying base resource path: /setting/deleterole. Lookup method: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole)
+ERROR - 2025-06-20 11:59:04 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 11:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 11:59:09 --> RBAC: Exact path '/setting/deleterole/3' not found. Trying base resource path: /setting/deleterole. Lookup method: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole)
+ERROR - 2025-06-20 11:59:09 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 11:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 20:27:31 --> CSRF token verified.
+DEBUG - 2025-06-20 20:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:27:38 --> RBAC: Exact path '/setting/deleterole/3' not found. Trying base resource path: /setting/deleterole. Lookup method: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole)
+ERROR - 2025-06-20 20:27:38 --> RBAC: Menu not found in DB for UserID: 1. Path: /setting/deleterole/3. Tried lookup with: /setting/deleterole/3.
+DEBUG - 2025-06-20 20:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 20:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:55 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:13:55 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:13:55 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:13:55 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:02 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:14:02 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:14:02 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:14:02 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:34 --> RBAC: Exact path '/setting/users/getuserroles/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:14:34 --> RBAC: Identified '/setting/users/getuserroles/1' as potential action. Base resource path considered: /setting/users.
+DEBUG - 2025-06-20 22:14:34 --> RBAC: Found base menu '/setting/users' for action path '/setting/users/getuserroles/1'. Authorization will use this base menu.
+DEBUG - 2025-06-20 22:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:44 --> RBAC: Exact path '/setting/users/getuserroles/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:14:44 --> RBAC: Identified '/setting/users/getuserroles/1' as potential action. Base resource path considered: /setting/users.
+DEBUG - 2025-06-20 22:14:44 --> RBAC: Found base menu '/setting/users' for action path '/setting/users/getuserroles/1'. Authorization will use this base menu.
+INFO - 2025-06-20 22:14:50 --> CSRF token verified.
+DEBUG - 2025-06-20 22:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:50 --> RBAC: Exact path '/setting/users/saveuserrole' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:14:50 --> RBAC: Path '/setting/users/saveuserrole' (segments: 3) not identified as a standard action path on a base resource.
+ERROR - 2025-06-20 22:14:50 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/users/saveuserrole. Lookup attempts: currentPath (/setting/users/saveuserrole).
+DEBUG - 2025-06-20 22:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-20 22:33:47 --> CSRF token verified.
+DEBUG - 2025-06-20 22:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:50 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:33:50 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:33:53 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_view'.
+DEBUG - 2025-06-20 22:33:53 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:33:53 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:33:53 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:33:53 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:34:03 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:34:03 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:38:34 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:38:34 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:38:35 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:38:35 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:38:37 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_view'.
+DEBUG - 2025-06-20 22:38:37 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:38:37 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:38:37 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:38:37 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:46 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:42:46 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:49 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_view'.
+DEBUG - 2025-06-20 22:42:49 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:42:49 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:42:49 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:42:49 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:42:51 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:42:51 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:20 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:47:20 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:22 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:47:22 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:25 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_delete'.
+DEBUG - 2025-06-20 22:47:25 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:47:25 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:47:25 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:47:25 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:28 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:47:28 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+INFO - 2025-06-20 22:47:56 --> CSRF token verified.
+DEBUG - 2025-06-20 22:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:47:56 --> RBAC: Determined required permission for path '/setting/saverole' is 'can_update'.
+DEBUG - 2025-06-20 22:47:56 --> RBAC: Exact path '/setting/saverole' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:47:56 --> RBAC: Path '/setting/saverole' (segments: 2) not identified as a standard action path for base resource fallback.
+ERROR - 2025-06-20 22:47:56 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/saverole. Lookup attempts: currentPath (/setting/saverole).
+DEBUG - 2025-06-20 22:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:52:12 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:52:12 --> RBAC: Exact menu '/setting/roles' found for path '/setting/roles'.
+DEBUG - 2025-06-20 22:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:52:15 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_delete'.
+DEBUG - 2025-06-20 22:52:15 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:52:15 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:52:15 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:52:15 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:59:23 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 22:59:23 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 22:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 22:59:26 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_delete'.
+DEBUG - 2025-06-20 22:59:26 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 22:59:26 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 22:59:26 --> RBAC: Base resource path '/setting/deleterole' not found in menu DB for action path '/setting/deleterole/3'.
+ERROR - 2025-06-20 22:59:26 --> RBAC: No menu entry found for authorization. UserID: 1. Path: /setting/deleterole/3. Lookup attempts: currentPath (/setting/deleterole/3) -> baseResourcePath (/setting/deleterole).
+DEBUG - 2025-06-20 22:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:01:30 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 23:01:30 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 23:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:42:36 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 23:42:36 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 23:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:43:10 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 23:43:10 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 23:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:43:13 --> RBAC: Determined required permission for path '/setting/deleterole/3' is 'can_delete'.
+DEBUG - 2025-06-20 23:43:13 --> RBAC: Exact path '/setting/deleterole/3' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:43:13 --> RBAC: Identified '/setting/deleterole/3' as potential action. Base resource path considered: /setting/deleterole.
+DEBUG - 2025-06-20 23:43:13 --> RBAC: Found base menu '/setting/deleterole' (ID: 17) for action path '/setting/deleterole/3'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:43:13 --> RBAC: Access denied for UserID: 1. Required permission 'can_delete' not granted for menu '/setting/deleterole' (MenuID: 17). Roles: 1. Path: /setting/deleterole/3. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:45:20 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 23:45:20 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 23:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:45:22 --> RBAC: Determined required permission for path '/setting/users' is 'can_view'.
+DEBUG - 2025-06-20 23:45:22 --> RBAC: Menu '/setting/users' (ID: 12) found by exact match for path '/setting/users'.
+DEBUG - 2025-06-20 23:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:45:23 --> RBAC: Determined required permission for path '/setting/menu' is 'can_view'.
+DEBUG - 2025-06-20 23:45:23 --> RBAC: Menu '/setting/menu' (ID: 6) found by exact match for path '/setting/menu'.
+DEBUG - 2025-06-20 23:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:23 --> RBAC: Determined required permission for path '/setting/roles' is 'can_view'.
+DEBUG - 2025-06-20 23:46:23 --> RBAC: Menu '/setting/roles' (ID: 10) found by exact match for path '/setting/roles'.
+DEBUG - 2025-06-20 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:26 --> RBAC: Determined required permission for path '/setting/getrolemenus/1' is 'can_view'.
+DEBUG - 2025-06-20 23:46:26 --> RBAC: Exact path '/setting/getrolemenus/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:46:26 --> RBAC: Identified '/setting/getrolemenus/1' as potential action. Base resource path considered: /setting/getrolemenus.
+DEBUG - 2025-06-20 23:46:26 --> RBAC: Found base menu '/setting/getrolemenus' (ID: 19) for action path '/setting/getrolemenus/1'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:46:26 --> RBAC: Access denied for UserID: 1. Required permission 'can_view' not granted for menu '/setting/getrolemenus' (MenuID: 19). Roles: 1. Path: /setting/getrolemenus/1. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:34 --> RBAC: Determined required permission for path '/setting/getrolemenus/1' is 'can_view'.
+DEBUG - 2025-06-20 23:46:34 --> RBAC: Exact path '/setting/getrolemenus/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:46:34 --> RBAC: Identified '/setting/getrolemenus/1' as potential action. Base resource path considered: /setting/getrolemenus.
+DEBUG - 2025-06-20 23:46:34 --> RBAC: Found base menu '/setting/getrolemenus' (ID: 19) for action path '/setting/getrolemenus/1'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:46:34 --> RBAC: Access denied for UserID: 1. Required permission 'can_view' not granted for menu '/setting/getrolemenus' (MenuID: 19). Roles: 1. Path: /setting/getrolemenus/1. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:46:53 --> RBAC: Determined required permission for path '/setting/getrolemenus/1' is 'can_view'.
+DEBUG - 2025-06-20 23:46:53 --> RBAC: Exact path '/setting/getrolemenus/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:46:53 --> RBAC: Identified '/setting/getrolemenus/1' as potential action. Base resource path considered: /setting/getrolemenus.
+DEBUG - 2025-06-20 23:46:53 --> RBAC: Found base menu '/setting/getrolemenus' (ID: 19) for action path '/setting/getrolemenus/1'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:46:53 --> RBAC: Access denied for UserID: 1. Required permission 'can_view' not granted for menu '/setting/getrolemenus' (MenuID: 19). Roles: 1. Path: /setting/getrolemenus/1. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:47:13 --> RBAC: Determined required permission for path '/setting/getrolemenus/1' is 'can_view'.
+DEBUG - 2025-06-20 23:47:13 --> RBAC: Exact path '/setting/getrolemenus/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:47:13 --> RBAC: Identified '/setting/getrolemenus/1' as potential action. Base resource path considered: /setting/getrolemenus.
+DEBUG - 2025-06-20 23:47:13 --> RBAC: Found base menu '/setting/getrolemenus' (ID: 19) for action path '/setting/getrolemenus/1'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:47:13 --> RBAC: Access denied for UserID: 1. Required permission 'can_view' not granted for menu '/setting/getrolemenus' (MenuID: 19). Roles: 1. Path: /setting/getrolemenus/1. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 23:59:33 --> RBAC: Determined required permission for path '/setting/getrolemenus/1' is 'can_view'.
+DEBUG - 2025-06-20 23:59:33 --> RBAC: Exact path '/setting/getrolemenus/1' not found. Attempting to find base resource.
+DEBUG - 2025-06-20 23:59:33 --> RBAC: Identified '/setting/getrolemenus/1' as potential action. Base resource path considered: /setting/getrolemenus.
+DEBUG - 2025-06-20 23:59:33 --> RBAC: Found base menu '/setting/getrolemenus' (ID: 19) for action path '/setting/getrolemenus/1'. Authorization will use this base menu.
+WARNING - 2025-06-20 23:59:33 --> RBAC: Access denied for UserID: 1. Required permission 'can_view' not granted for menu '/setting/getrolemenus' (MenuID: 19). Roles: 1. Path: /setting/getrolemenus/1. (Permission checked on base menu for action path).
+DEBUG - 2025-06-20 23:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

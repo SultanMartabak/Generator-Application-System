@@ -1,0 +1,158 @@
+<?php
+
+namespace App\Controllers{{moduleNamespace}};
+use App\Filters\Rbac;
+use App\Controllers\BaseController;
+use App\Models{{moduleNamespace}}\{{modelName}};
+
+class {{controllerName}} extends BaseController
+{
+    protected ${{modelVarName}};
+
+    public function __construct()
+    {
+        $this->{{modelVarName}} = new {{modelName}}();
+    }
+
+    public function index()
+    {
+        if (!Rbac::userCan('can_view', '{{urlPath}}')) {
+            // Jika ini permintaan AJAX, kirim respons JSON error
+            if ($this->request->isAJAX()) return $this->response->setJSON(['error' => 'Anda tidak memiliki izin untuk mengakses halaman ini.']);
+            return redirect()->to('/dashboard')->with('access_denied_error', 'Anda tidak memiliki izin untuk melihat data {{menuName}}.');
+        }
+
+        $search = $this->request->getGet('search');
+        $data['search'] = $search;
+
+        if ($search) {
+            $this->{{modelVarName}}->like('name', $search); // Adjust field name if necessary
+        }
+
+        $data['{{modelVarName}}s'] = $this->{{modelVarName}}->paginate($this->perPage);
+        $data['pager'] = $this->{{modelVarName}}->pager;
+
+        if ($this->request->isAJAX()) {
+            $view = view('{{viewPath}}/_list_partial', $data);
+            return $this->response->setJSON(['html' => $view]);
+        }
+
+        $data['title'] = 'Manajemen {{menuName}}';
+        $data['sidebarMenus'] = $this->sidebarMenus;
+        return view('{{viewPath}}/index', $data);
+    }
+
+    public function create()
+    {
+        if (!Rbac::userCan('can_create', '{{urlPath}}')) {
+            session()->setFlashdata('error', 'Anda tidak memiliki izin untuk menambah data {{menuName}}.');
+            return redirect()->back();
+        }
+
+        if ($this->{{modelVarName}}->save($this->request->getPost())) {
+            session()->setFlashdata('success', 'Data {{menuName}} berhasil ditambahkan.');
+        } else {
+            session()->setFlashdata('errors', $this->{{modelVarName}}->errors());
+        }
+        return redirect()->to(site_url('{{urlPath}}'));
+    }
+
+    public function update($id = null)
+    {
+        if (!Rbac::userCan('can_update', '{{urlPath}}')) {
+            session()->setFlashdata('error', 'Anda tidak memiliki izin untuk mengubah data {{menuName}}.');
+            return redirect()->back();
+        }
+
+        if ($this->{{modelVarName}}->save($this->request->getPost())) {
+            session()->setFlashdata('success', 'Data {{menuName}} berhasil diperbarui.');
+        } else {
+            session()->setFlashdata('errors', $this->{{modelVarName}}->errors());
+        }
+        return redirect()->to(site_url('{{urlPath}}'));
+    }
+
+    public function delete($id = null)
+    {
+        if (!Rbac::userCan('can_delete', '{{urlPath}}')) {
+            session()->setFlashdata('error', 'Anda tidak memiliki izin untuk menghapus data {{menuName}}.');
+            return redirect()->back();
+        }
+        
+        if ($this->{{modelVarName}}->delete($id)) {
+            session()->setFlashdata('success', 'Data {{menuName}} berhasil dipindahkan ke sampah.');
+        } else {
+            session()->setFlashdata('error', 'Gagal memindahkan data {{menuName}} ke sampah.');
+        }
+        return redirect()->to(site_url('{{urlPath}}'));
+    }
+
+    /**
+     * Displays a list of soft-deleted items.
+     * Accessible only by Super Admins.
+     */
+    public function trash()
+    {
+        if (session()->get('role_id') != SUPER_ADMIN_ROLE_ID) {
+            return redirect()->to(site_url('{{urlPath}}'))->with('error', 'Anda tidak memiliki izin untuk mengakses halaman ini.');
+        }
+
+        $data['{{modelVarName}}s'] = $this->{{modelVarName}}->onlyDeleted()->paginate($this->perPage);
+        $data['pager'] = $this->{{modelVarName}}->pager;
+        $data['title'] = 'Data Terhapus: {{menuName}}';
+        $data['sidebarMenus'] = $this->sidebarMenus;
+
+        return view('{{viewPath}}/trash', $data);
+    }
+
+    /**
+     * Restores a soft-deleted item.
+     * Accessible only by Super Admins.
+     */
+    public function restore($id = null)
+    {
+        if (session()->get('role_id') != SUPER_ADMIN_ROLE_ID) {
+            session()->setFlashdata('error', 'Anda tidak memiliki izin untuk melakukan aksi ini.');
+            return redirect()->to(site_url('{{urlPath}}/trash'));
+        }
+
+        // Find the deleted item first to ensure it exists in trash
+        $item = $this->{{modelVarName}}->onlyDeleted()->find($id);
+        if (!$item) {
+            session()->setFlashdata('error', 'Data tidak ditemukan di dalam sampah.');
+            return redirect()->to(site_url('{{urlPath}}/trash'));
+        }
+
+        // Restore by setting deleted_at to null
+        $this->{{modelVarName}}->protect(false);
+        $isRestored = $this->{{modelVarName}}->update($id, ['deleted_at' => null]);
+        $this->{{modelVarName}}->protect(true);
+
+        if ($isRestored) {
+            session()->setFlashdata('success', 'Data {{menuName}} berhasil dipulihkan.');
+        } else {
+            session()->setFlashdata('error', 'Gagal memulihkan data {{menuName}}.');
+        }
+        return redirect()->to(site_url('{{urlPath}}/trash'));
+    }
+
+    /**
+     * Permanently deletes a soft-deleted item.
+     * Accessible only by Super Admins.
+     */
+    public function purge($id = null)
+    {
+        if (session()->get('role_id') != SUPER_ADMIN_ROLE_ID) {
+            session()->setFlashdata('error', 'Anda tidak memiliki izin untuk melakukan aksi ini.');
+            return redirect()->to(site_url('{{urlPath}}/trash'));
+        }
+
+        // The second parameter 'true' forces a permanent delete.
+        if ($this->{{modelVarName}}->delete($id, true)) {
+            session()->setFlashdata('success', 'Data {{menuName}} berhasil dihapus secara permanen.');
+        } else {
+            session()->setFlashdata('error', 'Gagal menghapus data {{menuName}} secara permanen.');
+        }
+        return redirect()->to(site_url('{{urlPath}}/trash'));
+    }
+}

@@ -1,0 +1,155 @@
+<?= $this->extend('partials/main_layout') ?>
+
+<?= $this->section('content') ?>
+<div class="container mt-5 p-3">
+    <?php use App\Filters\Rbac; ?>
+    <h2 class="mb-4">Manajemen {{menuName}}</h2>
+
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+        <div>
+            <?php if (Rbac::userCan('can_create', '{{urlPath}}')) : ?>
+                <button class="btn btn-success me-2 rounded-pill px-4 py-2 shadow-sm fw-semibold" onclick="openAddModal()"><i class="bi bi-plus"></i> Tambah {{menuName}}</button>
+            <?php endif; ?>
+            <?php if (session()->get('role_id') == SUPER_ADMIN_ROLE_ID) : ?>
+                <a href="<?= site_url('{{urlPath}}/trash') ?>" class="btn btn-warning rounded-pill px-4 py-2 shadow-sm fw-semibold"><i class="bi bi-trash3"></i> Trash</a>
+            <?php endif; ?>
+        </div>
+        <div class="mt-2 mt-md-0 flex-grow-1" style="max-width: 350px; min-width: 220px;">
+            <div class="input-group shadow-sm rounded-pill overflow-hidden bg-white border border-2 border-primary-subtle">
+                <span class="input-group-text bg-white border-0"><i class="bi bi-search text-primary"></i></span>
+                <input class="form-control border-0 bg-white px-3 py-2" type="search" placeholder="Cari {{menuName}}..." id="search-input" value="<?= esc($search ?? '') ?>" style="box-shadow:none;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Container untuk daftar yang akan diupdate oleh AJAX -->
+    <div id="list-container" class="position-relative">
+        <?= view('{{viewPath}}/_list_partial', ['{{modelVarName}}s' => ${{modelVarName}}s, 'pager' => $pager]) ?>
+    </div>
+</div>
+
+<!-- Modal Tambah/Edit -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form id="modalForm" class="modal-content rounded-4 shadow-lg border-0" method="post">
+      <?= csrf_field() ?>
+      <input type="hidden" name="id" id="id_input">
+      <div class="modal-header bg-primary text-white rounded-top-4 border-0">
+        <h5 class="modal-title d-flex align-items-center gap-2" id="formModalLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light-subtle">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" class="form-control rounded-pill" id="name_input" name="name" required>
+        </div>
+        <!-- Add more form fields here based on your model's allowed fields -->
+      </div>
+      <div class="modal-footer bg-light rounded-bottom-4 border-0">
+        <button type="submit" class="btn btn-primary rounded-pill px-4"><i class="bi bi-save"></i> Simpan</button>
+        <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Batal</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form id="deleteForm" class="modal-content rounded-4 shadow-lg border-0" method="post">
+      <?= csrf_field() ?>
+      <div class="modal-header bg-danger text-white rounded-top-4 border-0">
+        <h5 class="modal-title d-flex align-items-center gap-2" id="deleteModalLabel"><i class="bi bi-exclamation-triangle-fill"></i> Konfirmasi Hapus</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light-subtle">
+        <p>Anda yakin ingin menghapus <strong id="delete_item_name"></strong>?</p>
+      </div>
+      <div class="modal-footer bg-light rounded-bottom-4 border-0">
+        <button type="submit" class="btn btn-danger rounded-pill px-4"><i class="bi bi-trash-fill"></i> Ya, Hapus</button>
+        <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Batal</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+    // Deklarasikan variabel modal di lingkup global agar bisa diakses oleh fungsi onclick
+    let formModal;
+    let deleteModal;
+
+    // Pindahkan semua logika yang berinteraksi dengan DOM ke dalam event listener ini
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inisialisasi modal di sini, setelah DOM dan skrip bootstrap dimuat sepenuhnya
+        formModal = new bootstrap.Modal(document.getElementById('formModal'));
+        deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+
+        const searchInput = document.getElementById('search-input');
+        const listContainer = document.getElementById('list-container');
+        let debounceTimer;
+
+        async function fetchList(page = 1, searchTerm = '') {
+            const url = new URL('<?= site_url('{{urlPath}}') ?>');
+            url.searchParams.set('page', page);
+            if (searchTerm) url.searchParams.set('search', searchTerm);
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                });
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                listContainer.innerHTML = data.html;
+            } catch (error) {
+                console.error('Fetch error:', error);
+                listContainer.innerHTML = '<div class="alert alert-danger">Gagal memuat data.</div>';
+            }
+        }
+
+        searchInput.addEventListener('keyup', (e) => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                fetchList(1, e.target.value);
+            }, 500);
+        });
+
+        listContainer.addEventListener('click', (e) => {
+            const pageLink = e.target.closest('a.page-link');
+            if (pageLink) {
+                e.preventDefault();
+                const url = new URL(pageLink.href);
+                const page = url.searchParams.get('page');
+                if (page) {
+                    fetchList(page, searchInput.value);
+                }
+            }
+        });
+    });
+
+    // Fungsi-fungsi ini tetap di lingkup global agar bisa dipanggil oleh atribut onclick
+    function openAddModal() {
+        document.getElementById('modalForm').action = "<?= site_url('{{urlPath}}/create') ?>";
+        document.getElementById('modalForm').reset();
+        document.getElementById('id_input').value = '';
+        document.getElementById('formModalLabel').innerText = 'Tambah {{menuName}}';
+        if (formModal) formModal.show();
+    }
+
+    function openEditModal(data) {
+        document.getElementById('modalForm').action = `<?= site_url('{{urlPath}}/update/') ?>${data.id}`;
+        document.getElementById('modalForm').reset();
+        document.getElementById('id_input').value = data.id;
+        document.getElementById('name_input').value = data.name;
+        // Populate other fields
+        document.getElementById('formModalLabel').innerText = 'Edit {{menuName}}';
+        if (formModal) formModal.show();
+    }
+
+    function openDeleteModal(id, name) {
+        document.getElementById('deleteForm').action = `<?= site_url('{{urlPath}}/delete/') ?>${id}`;
+        document.getElementById('delete_item_name').innerText = name;
+        if (deleteModal) deleteModal.show();
+    }
+</script>
+<?= $this->endSection() ?>
