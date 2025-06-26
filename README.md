@@ -1,60 +1,89 @@
-# CodeIgniter 4 Framework
+# GAS - Generator CRUD CodeIgniter 4
 
-## What is CodeIgniter?
+**GAS** adalah aplikasi generator CRUD berbasis CodeIgniter 4 yang memudahkan pembuatan modul manajemen data secara otomatis, lengkap dengan fitur:
+- **CRUD Otomatis** (Controller, Model, View)
+- **Soft Delete** & Trash/Restore
+- **RBAC (Role-Based Access Control)**
+- **Manajemen Menu Dinamis**
+- **Pencarian & Pagination AJAX**
+- **Responsive Design (Bootstrap 5)**
+- **Super Admin Panel**
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Fitur Utama
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- **Generator CRUD**  
+  Buat modul CRUD baru hanya dengan satu perintah, lengkap dengan controller, model, view, dan stub yang sudah siap pakai.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- **Soft Delete & Trash**  
+  Data yang dihapus tidak langsung hilang, melainkan masuk ke halaman Trash. Super Admin dapat melakukan restore atau hapus permanen.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- **RBAC**  
+  Hak akses menu dan aksi (view, create, update, delete) dapat diatur per role melalui panel admin.
 
-## Important Change with index.php
+- **Manajemen Menu**  
+  Menu aplikasi dapat diatur secara dinamis, termasuk urutan dan akses per role.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+- **Responsive & Modern UI**  
+  Tampilan berbasis Bootstrap 5, mendukung desktop dan mobile.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Cara Install
 
-**Please** read the user guide for a better explanation of how CI4 works!
+1. **Clone repository ini**
+   ```bash
+   git clone https://github.com/username/gas.git
+   cd gas
+   ```
 
-## Repository Management
+2. **Install dependency**
+   ```bash
+   composer install
+   ```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+3. **Copy file environment**
+   ```bash
+   cp .env.example .env
+   ```
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+4. **Atur koneksi database di file `.env`**
 
-## Contributing
+5. **Jalankan migrasi**
+   ```bash
+   php spark migrate
+   ```
 
-We welcome contributions from the community.
+6. **Jalankan server**
+   ```bash
+   php spark serve
+   ```
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+7. **Akses aplikasi di browser**
+   ```
+   http://localhost:8080
+   ```
 
-## Server Requirements
+## Cara Generate Modul CRUD Baru
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+```bash
+php spark generate:crud <url_path> <menu_name>
+```
+Contoh:
+```bash
+php spark generate:crud kendaraan/data-kendaraan "Data Kendaraan"
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## Hak Akses & Role
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+- **Super Admin**: Akses penuh, termasuk fitur restore & purge trash.
+- **Admin/User**: Hak akses sesuai pengaturan di panel Role Setting.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## Kontribusi
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Pull request sangat diterima! Silakan fork repo ini dan ajukan PR untuk fitur/bugfix.
+
+## Lisensi
+
+MIT
+
+---
+
+**Dibuat dengan ❤️ menggunakan CodeIgniter 4**
